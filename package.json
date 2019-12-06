@@ -1,0 +1,23 @@
+{
+	"name": "xml-parser-comparison",
+	"version": "1.0.0",
+	"description": "Testing of nodejs memory consumption for a 20KB xml file",
+	"main": "index.js",
+	"scripts": {
+		"libxmljs": "node ./libxmljs.js",
+		"xml2js": "node ./xml2js.js",
+		"xml-js": "node ./xml-js.js",
+		"xml2json": "node ./xml2json.js",
+		"fastxmlparser": "node ./fastxmlparser.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"fast-xml-parser": "^3.15.0",
+		"libxmljs": "^0.19.7",
+		"xml-js": "^1.6.11",
+		"xml2js": "^0.4.22",
+		"xml2json": "^0.11.2"
+	}
+}
