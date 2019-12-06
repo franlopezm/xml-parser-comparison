@@ -4,14 +4,14 @@ Testing of nodejs memory consumption for a 20KB xml file (parse to json)
 
 | library                                | Memory usage | XML to JSON |
 |----------------------------------------|--------------|:-----------:|
-| [libxmljs](###libxmljs)                | `8.6 MB`     | N           |
-| [xml2js](###xml2js)                    | `15.1 MB`    | Y           |
-| [xml2js](###xml2js)                    | `15.1 MB`    | Y           |
-| [xml-js](###xml-js)                    | `12.3 MB`    | Y           |
-| [xml2json](###xml2json)                | `11.4 MB`    | Y           |
-| [xml2json](###xml2json)                | `11.4 MB`    | Y           |
-| [fast-xml-parser](###fast-xml-parser)  | `8.9 MB`     | Y           |
-| [fast-xml-parser](###fast-xml-parser)  | `8.9 MB`     | Y           |
+| [libxmljs](#libxmljs)                  | `8.6 MB`     | N           |
+| [xml2js](#xml2js)                      | `15.1 MB`    | Y           |
+| [xml2js](#xml2js)                      | `15.1 MB`    | Y           |
+| [xml-js](#xml-js)                      | `12.3 MB`    | Y           |
+| [xml2json](#xml2json)                  | `11.4 MB`    | Y           |
+| [xml2json](#xml2json)                  | `11.4 MB`    | Y           |
+| [fast-xml-parser](#fast-xml-parser)    | `8.9 MB`     | Y           |
+| [fast-xml-parser](#fast-xml-parser)    | `8.9 MB`     | Y           |
 
 ---
 
