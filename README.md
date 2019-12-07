@@ -1,17 +1,67 @@
+<style>
+	table {
+		border-collapse: collapse;
+		margin-bottom: 50px;
+	}
+
+	table, thead, thead td, tbody td {
+		border: 1px solid #1f408a;
+	}
+</style>
+
 ## TEST XML PARSER
-Testing of nodejs memory consumption for a 20KB xml file (parse to json)
-
-
-| library                                | Memory usage | XML to JSON |
-|----------------------------------------|--------------|:-----------:|
-| [libxmljs](#libxmljs)                  | `8.6 MB`     | N           |
-| [xml2js](#xml2js)                      | `15.1 MB`    | Y           |
-| [xml2js](#xml2js)                      | `15.1 MB`    | Y           |
-| [xml-js](#xml-js)                      | `12.3 MB`    | Y           |
-| [xml2json](#xml2json)                  | `11.4 MB`    | Y           |
-| [xml2json](#xml2json)                  | `11.4 MB`    | Y           |
-| [fast-xml-parser](#fast-xml-parser)    | `8.9 MB`     | Y           |
-| [fast-xml-parser](#fast-xml-parser)    | `8.9 MB`     | Y           |
+Testing of nodejs memory consumption for a 20 KB xml file (parse to json)
+<table>
+	<thead>
+		<tr style="text-align: center;">
+			<td rowspan="2">library</td>
+			<td colspan="2">Memory usage</td>
+			<td rowspan="2">Memory<br/>release (time)</td>
+			<td rowspan="2">Convert<br/>XML to JSON</td>
+		</tr>
+		<tr>
+			<td>20 KB file</td>
+			<td>31 MB file</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><a href="#libxmljs">libxmljs</a></td>
+			<td><strong>8.6 MB</strong></td>
+			<td><strong>411.8 MB</strong></td>
+			<td>10~20 sec</td>
+			<td>No</td>
+		</tr>
+		<tr>
+			<td><a href="#xml2js">xml2js</a></td>
+			<td><strong>15.1 MB</strong></td>
+			<td><strong>70.8 MB</strong></td>
+			<td>> 60 sec</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td><a href="#xml-js">xml-js</a></td>
+			<td><strong>12.3 MB</strong></td>
+			<td><strong>420.6 MB</strong></td>
+			<td>> 60 sec</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td><a href="#xml2json">xml2json</a></td>
+			<td><strong>11.4 MB</strong></td>
+			<td><strong>147.9 MB</strong></td>
+			<td>30~40 sec</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td><a href="#fast-xml-parser">fast-xml-parser</a></td>
+			<td><strong>8.9 MB</strong></td>
+			<td><strong>396.4 MB</strong></td>
+			<td>30~40 sec</td>
+			<td>Yes</td>
+		</tr>
+	</tbody>
+</table>
 
 ---
 
