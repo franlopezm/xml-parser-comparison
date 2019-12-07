@@ -1,16 +1,6 @@
-<style>
-	table {
-		border-collapse: collapse;
-		margin-bottom: 50px;
-	}
-
-	table, thead, thead td, tbody td {
-		border: 1px solid #1f408a;
-	}
-</style>
-
 ## TEST XML PARSER
-Testing of nodejs memory consumption for a 20 KB xml file (parse to json)
+Testing of nodejs memory consumption for two xml files (parse to json), one of 20 KB and another of 30 MB
+
 <table>
 	<thead>
 		<tr style="text-align: center;">
